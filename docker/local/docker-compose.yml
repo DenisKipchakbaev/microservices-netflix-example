@@ -1,0 +1,31 @@
+version: '2'
+services:
+  kafkaserver:
+      image: spotify/kafka
+      mem_limit: 1073741824
+      ports:
+        - 2181:2181
+        - 9092:9092
+      environment:
+        - ADVERTISED_HOST=localhost
+        - ADVERTISED_PORT=9092
+        
+  redis:
+      image: redis:alpine
+      ports:
+        - 6379:6379
+        
+  logspout:
+      image: gliderlabs/logspout
+      command: syslog://logs2.papertrailapp.com:39865
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
+        
+  database:
+      image: postgres:9.5
+      ports:
+        - "5432:5432"
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=p0stgr@s
+        - POSTGRES_DB=eagle_eye_local
