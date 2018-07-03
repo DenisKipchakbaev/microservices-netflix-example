@@ -2,14 +2,14 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.thoughtmechanix</groupId>
+  <groupId>es.in2.micro</groupId>
   <version>0.0.1-SNAPSHOT</version>
-  <artifactId>tmx-parent-pom</artifactId>
+  <artifactId>spring-cloud-netflix-example-parent-pom</artifactId>
   <packaging>pom</packaging>
 
 
-  <name>thoughtmechanix-parent-pom</name>
-  <description>Parent Pom for the thoughtmechanix project</description>
+  <name>spring-cloud-netflix-example-parent-pom</name>
+  <description>Parent Pom for Spring Cloud Netflix example project</description>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
