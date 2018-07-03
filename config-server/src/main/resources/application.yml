@@ -20,10 +20,10 @@ spring:
       server:
         encrypt.enabled: false
         git:
-          uri: https://github.com/DenisKipchakbaev/config-repo/
+          uri: https://github.com/DenisKipchakbaev/microservices-netflix-example-config-repo/
           searchPaths: licensingservice,organizationservice,specialroutesservice,zuulservice,authenticationservice
-          username: native-cloud-apps
-          password: 0ffended
+#          username: native-cloud-apps
+#          password: 0ffended
 
 
 ####
@@ -39,8 +39,8 @@ spring:
 #     config:
 #       server:
 #           native:
-#              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
-#                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
+#              searchLocations: file:///home/denis/devel/microservices-netflix-example/config-server/src/main/resources/config/licensingservice,
+#                               file:///home/denis/devel/microservices-netflix-example/config-server/src/main/resources/config/organizationservice
 ##              #searchLocations: classpath:config/,classpath:config/licensingservice
 
 
@@ -49,4 +49,4 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    com.thoughtmechanix: DEBUG
+    es.in2.micro: DEBUG

@@ -25,6 +25,7 @@ Custom example business services:
 
 
 # Software needed
+0.  [Linux Host]
 1.  [Java 8]
 2.	[Apache Maven] (http://maven.apache.org).
 3.	[Docker] (http://docker.com). Docker V1.12 and above. I am taking advantage of the embedded DNS server in Docker that came out in release V1.11.
