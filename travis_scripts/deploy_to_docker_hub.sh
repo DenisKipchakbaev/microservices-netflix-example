@@ -1,8 +1,8 @@
 echo "Pushing service docker images to docker hub ...."
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-docker push johncarnell/tmx-authentication-service:$BUILD_NAME
-docker push johncarnell/tmx-licensing-service:$BUILD_NAME
-docker push johncarnell/tmx-organization-service:$BUILD_NAME
-docker push johncarnell/tmx-confsvr:$BUILD_NAME
-docker push johncarnell/tmx-eurekasvr:$BUILD_NAME
-docker push johncarnell/tmx-zuulsvr:$BUILD_NAME
+docker push kipc/sandbox-authentication-server:$BUILD_NAME
+docker push kipc/sandbox-licensing-service:$BUILD_NAME
+docker push kipc/sandbox-organization-service:$BUILD_NAME
+docker push kipc/sandbox-config-server:$BUILD_NAME
+docker push kipc/sandbox-eureka-server:$BUILD_NAME
+docker push kipc/sandbox-zuul-server:$BUILD_NAME

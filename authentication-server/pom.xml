@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Eagle Eye Authentication Service</name>
+  <name>Authentication Server</name>
   <description>Authentication Server</description>
 
   <parent>
@@ -101,8 +101,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <start-class>com.thoughtmechanix.authentication.Application</start-class>
-    <docker.image.name>johncarnell/tmx-authentication-service</docker.image.name>
+    <start-class>es.in2.micro.authentication.Application</start-class>
+    <docker.image.name>kipc/sandbox-authentication-server</docker.image.name>
     <docker.image.tag>${env.BUILD_NAME}</docker.image.tag>
   </properties>
 

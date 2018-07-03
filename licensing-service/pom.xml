@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Eagle Eye Licensing Service </name>
+  <name>Eagle Eye Licensing Service</name>
   <description>Licensing Service</description>
 
   <parent>
@@ -140,8 +140,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <start-class>com.thoughtmechanix.licenses.Application</start-class>
-    <docker.image.name>johncarnell/tmx-licensing-service</docker.image.name>
+    <start-class>es.in2.micro.licenses.Application</start-class>
+    <docker.image.name>kipc/sandbox-licensing-service</docker.image.name>
     <docker.image.tag>${env.BUILD_NAME}</docker.image.tag>
   </properties>
 
