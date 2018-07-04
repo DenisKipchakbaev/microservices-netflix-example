@@ -60,9 +60,11 @@ services:
         SERVER_PORT: "8901"
         CONFIGSERVER_URI: "http://configserver:8888"
         EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
-        DATABASE_PORT:     5432
-        CONFIGSERVER_PORT: 8888
-        EUREKASERVER_PORT: 8761
+        ZIPKIN_URI: "http://zipkin:9411"
+        ZIPKIN_PORT:       "9411"
+        DATABASE_PORT:     "5432"
+        CONFIGSERVER_PORT: "8888"
+        EUREKASERVER_PORT: "8761"
         ENCRYPT_KEY:       "IMSYMMETRIC"
   
   organizationservice:
