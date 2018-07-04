@@ -15,6 +15,13 @@ eureka:
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 
+spring:
+  sleuth:
+    sampler:
+       percentage:  1  #send 100% (1) of the requests to Zipkin
+  zipkin:
+    baseUrl:  http://localhost:9411
+
 #server:
 #  contextPath:   /auth
 
