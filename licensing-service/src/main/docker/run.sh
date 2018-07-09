@@ -35,7 +35,7 @@ echo "********************************************************"
 echo "Starting License Server with Configuration Service via Eureka :  $EUREKASERVER_URI:$SERVER_PORT"
 echo "Using Kafka Server: $KAFKASERVER_URI"
 echo "Using ZK    Server: $ZKSERVER_URI"
-echo "USing Profile: $PROFILE"
+echo "Using Profile: $PROFILE"
 echo "********************************************************"
 java -Djava.security.egd=file:/dev/./urandom -Dserver.port=$SERVER_PORT   \
      -Deureka.client.serviceUrl.defaultZone=$EUREKASERVER_URI             \

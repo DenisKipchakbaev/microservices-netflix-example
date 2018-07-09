@@ -31,12 +31,19 @@ Custom example business services:
 3.	[Docker] (http://docker.com). Docker V1.12 and above. I am taking advantage of the embedded DNS server in Docker that came out in release V1.11.
 4.	[Git Client] (http://git-scm.com).
 
+# Configuration
+Configuration server module uses Git repo to pull configuration parameters of service modules it is responsible for. Git configuration repo is: 
+https://github.com/DenisKipchakbaev/microservices-netflix-example-config-repo
+Fork it for your own projects.
+
 # Building the Docker Images
 To build the code examples as a docker image, open a command-line window change to the directory where you have downloaded the source code.
 
 Run the following maven command.  This command will execute the [Spotify docker plugin](https://github.com/spotify/docker-maven-plugin) defined in the pom.xml file.  
+
+   **export BUILD_NAME=final**
    
-   **mvn -Denv.BUILD_NAME=final clean package docker:build**
+   **mvn clean package docker:build**
 
 If everything builds successfully you should see a message indicating that the build was successful.
 
@@ -45,7 +52,7 @@ If everything builds successfully you should see a message indicating that the b
 Now we are going to use docker-compose to start the actual image.  To start the docker image,
 change to the directory containing  your source code.  Issue the following docker-compose command:
 
-   **export BUILD_NAME=final && docker-compose -f docker/common/docker-compose.yml up**
+   **docker-compose -f docker/common/docker-compose.yml up**
 
 If everything starts correctly you should see a bunch of Spring Boot information fly by on standard out.  At this point all of the services needed for the chapter code examples will be running.
 
