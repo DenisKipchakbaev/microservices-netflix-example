@@ -39,9 +39,11 @@ Fork it for your own projects.
 # Building the Docker Images
 To build the code examples as a docker image, open a command-line window change to the directory where you have downloaded the source code.
 
-Run the following maven command.  This command will execute the [Spotify docker plugin](https://github.com/spotify/docker-maven-plugin) defined in the pom.xml file.  
+Define environment variable to be used as a tag for docker images:
 
    **export BUILD_NAME=final**
+   
+Run the following maven command.  This command will execute the [Spotify docker plugin](https://github.com/spotify/docker-maven-plugin) defined in the pom.xml file.  
    
    **mvn clean package docker:build**
 
@@ -50,7 +52,9 @@ If everything builds successfully you should see a message indicating that the b
 # Running the services in Docker
 
 Now we are going to use docker-compose to start the actual image.  To start the docker image,
-change to the directory containing  your source code.  Issue the following docker-compose command:
+change to the directory containing  your source code. 
+BUILD_NAME environment variable should be present as in previous step. 
+Issue the following docker-compose command:
 
    **docker-compose -f docker/common/docker-compose.yml up**
 
@@ -96,3 +100,7 @@ ENCRYPT_KEY=IMSYMMETRIC
    **docker-compose -f docker/local/docker-compose.yml up**
    
 - Start Spring Boot apps, starting from config-server and eureka
+
+# Postman
+
+There is a collection of API calls in the directory /postman for Postman app
