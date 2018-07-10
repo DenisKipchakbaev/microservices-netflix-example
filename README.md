@@ -18,10 +18,14 @@ This example project include:
 8.  A Redis service to act as a distributed cache.
 
 Custom example business services:
+
 9.  A licensing service that will manage licensing data used within a company.
+
 10.  An organization service that will manage client organization data used within a company.
-11.  ==TODO==A new version of the organization service.  This service is used to demonstrate how to use the Zuul API gateway to route to different versions of a service.
-12.  ==TODO==A special routes services that the the API gateway will call to determine whether or not it should route a user's service call to a different service then the one they were originally calling.  This service is used in conjunction with the orgservice-new service to determine whether a call to the organization service gets routed to an old version of the organization service vs. a new version of the service.
+
+11.  [TODO] A new version of the organization service.  This service is used to demonstrate how to use the Zuul API gateway to route to different versions of a service.
+
+12.  [TODO] A special routes services that the the API gateway will call to determine whether or not it should route a user's service call to a different service then the one they were originally calling.  This service is used in conjunction with the orgservice-new service to determine whether a call to the organization service gets routed to an old version of the organization service vs. a new version of the service.
 
 
 # Software needed
